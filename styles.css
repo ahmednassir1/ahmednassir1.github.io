@@ -1,67 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333333;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    color: #666666;
-    line-height: 1.5;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
+}
 
-  
-  .skills {
-    margin-top: 30px;
-  }
-  
-  .skills ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .skills li {
-    display: inline-block;
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
     margin-right: 10px;
-    padding: 5px 10px;
-    background-color: #eeeeee;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #666666;
-  }
-  
-  .contact {
-    margin-top: 30px;
-  }
-  
-  .contact p {
-    margin-bottom: 10px;
-  }
-  
-  .contact a {
-    color: #333333;
-    text-decoration: none;
-  }
-  
-  .contact a:hover {
-    color: #ff6600;
-    text-decoration: underline;
-  }
-  
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#weatherData {
+    text-align: center;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 16px;
+}
+
+       
