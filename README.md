@@ -1,5 +1,10 @@
 # Weather Forecast Website
 
+<<<<<<< HEAD
+=======
+![Weather Forecast](screenshot.png)
+
+>>>>>>> c43f09d9d4f26b7683db559755d7290ca695ebee
 Welcome to the Weather Forecast website! This web application provides up-to-date weather forecasts for locations around the world. Whether you're planning a trip, preparing for an outdoor event, or simply curious about the weather, our website has you covered.
 
 ## Features
@@ -37,6 +42,10 @@ Contributions to the Weather Forecast website are welcome! If you'd like to cont
 
 ## Contact
 
+<<<<<<< HEAD
 If you have any questions, feedback, or issues, please feel free to [contact us](nassirmohamed797@gmail.com).
+=======
+If you have any questions, feedback, or issues, please feel free to [contact us](mailto:weather@example.com).
+>>>>>>> c43f09d9d4f26b7683db559755d7290ca695ebee
 
 Enjoy using the Weather Forecast website to stay informed about the weather conditions wherever you are!
