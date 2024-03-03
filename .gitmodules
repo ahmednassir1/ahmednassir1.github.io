@@ -1,3 +1,6 @@
 [submodule "ahmednassir1.github.io"]
-path = ahmednassir1.github.io
-	url = https://github.com/ahmednassir1/ahmednassir1.github.io.git
+path = ahmednassir.github.io
+url = https://github.com/ahmednassir1/ahmednassir1.github.io.git
+git add .gitmodules
+git commit -m "fixed submodule url"
+git push origin main
