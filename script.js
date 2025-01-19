@@ -1,26 +1,32 @@
- const apiKey = "2b87ba7a024581ba46fe2eb5b443d739";
+document.addEventListener('DOMContentLoaded', function() {
+    const updatesContainer = document.getElementById('updates');
 
-// Function to fetch weather data from OpenWeatherMap API
-async function getWeather() {
-    const cityInput = document.getElementById("cityInput");
-    const cityName = document.getElementById("cityName");
-    const temperature = document.getElementById("temperature");
-    const description = document.getElementById("description");
+    // Function to fetch and display updates
+    function loadUpdates() {
+        // Simulating an API call to fetch updates
+        const updates = [
+            { title: 'Gold Sell', content: '2717.00.' },
+            { title: 'Stop Loss', content: '2719.00.' },
+            { title: 'Take Profit', content: '2700.00.' }
+        ];
 
-    const city = cityInput.value.trim();
-    if (city !== "") {
-        try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
-            const data = await response.json();
+        updates.forEach(update => {
+            const updateElement = document.createElement('div');
+            updateElement.classList.add('update');
 
-            cityName.textContent = data.name;
-            temperature.textContent = `${data.main.temp} °C`;
-            description.textContent = data.weather[0].description;
-        } catch (error) {
-            cityName.textContent = "Error";
-            temperature.textContent = "";
-            description.textContent = "";
-            console.error("Error fetching weather data:", error);
-        }
+            const titleElement = document.createElement('h4');
+            titleElement.textContent = update.title;
+
+            const contentElement = document.createElement('p');
+            contentElement.textContent = update.content;
+
+            updateElement.appendChild(titleElement);
+            updateElement.appendChild(contentElement);
+
+            updatesContainer.appendChild(updateElement);
+        });
     }
-}
+
+    // Load updates on page load
+    loadUpdates();
+});

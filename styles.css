@@ -1,59 +1,88 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-h1 {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
-.input-container {
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
+nav ul li {
+    margin: 0 1rem;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-#weatherData {
-    text-align: center;
-}
-
-#temperature {
-    font-size: 24px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
 }
 
-#description {
-    font-size: 16px;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#updates {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
     position: fixed;
+    width: 100%;
     bottom: 0;
-    left: 0;
-    padding: 10px;
-    background-color: #f0f0f0;
 }
 
-
-       
+footer p {
+    margin: 0;
+}
