@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadUpdates() {
         // Simulating an API call to fetch updates
         const updates = [
-            { title: 'Gold Sell', content: '2717.00.' },
-            { title: 'Stop Loss', content: '2719.00.' },
+            { title: 'Gold Sell', content: '2726.00.' },
+            { title: 'Stop Loss', content: '2736.00.' },
             { title: 'Take Profit', content: '2700.00.' }
         ];
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             updateElement.appendChild(titleElement);
             updateElement.appendChild(contentElement);
-
+ 
             updatesContainer.appendChild(updateElement);
         });
     }
