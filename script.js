@@ -5,20 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadUpdates() {
         // Simulating an API call to fetch updates
         const updates = [
-            { title: 'Gold Sell', content: '2726.00.' },
-            { title: 'Stop Loss', content: '2736.00.' },
-            { title: 'Take Profit', content: '2700.00.' }
+            { title: 'Gold Buy', content: '2754.00.' },
+            { title: 'Stop Loss', content: '2740.00.' },
+            { title: 'Take Profit', content: '2790.00.'}
+            {title: 'Status: Active...'}
         ];
 
         updates.forEach(update => {
             const updateElement = document.createElement('div');
-            updateElement.classList.add('update');
+             updateElement.classList.add('update');
 
             const titleElement = document.createElement('h4');
             titleElement.textContent = update.title;
 
             const contentElement = document.createElement('p');
-            contentElement.textContent = update.content;
+             contentElement.textContent = update.content;
 
             updateElement.appendChild(titleElement);
             updateElement.appendChild(contentElement);
