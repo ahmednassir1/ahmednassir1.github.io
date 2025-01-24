@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const updates = [
             { title: 'Gold Buy', content: '2754.00.' },
             { title: 'Stop Loss', content: '2740.00.' },
-            { title: 'Take Profit', content: '2790.00.'}
+            { title: 'Take Profit', content: '2790.00.'},
             {title: 'Status: Active...'}
         ];
 
